@@ -1,38 +1,201 @@
-.App {
-  text-align: center;
+#root {
+  background: #fff;
+  padding-top: 0px;
+  position: relative;
+  transition: margin 0.3s ease-out;
+  width: 100%;
+  z-index: 1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#top {
+  height: 80px;
+  margin: 0 5%;
+  position: relative;
+  width: 90%;
+  z-index: 8;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.mts div,
+.mts select,
+.mts .txtin,
+.mts .button,
+.mts textarea,
+.mts .clockdate,
+.mts .clockplace {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+#root,
+div,
+td,
+#menu span,
+input,
+textarea {
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+  -moz-transition: color 0.2s ease, border-color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+div,
+h1,
+h2,
+h3,
+label,
+time {
+  clear: both;
+}
+
+div.title a:link,
+div.title a:visited {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 20px 30px;
+  letter-spacing: 3px;
+}
+
+div.title {
+  position: relative;
+  z-index: 9;
+}
+
+.title a {
+  transition: background 0.2s ease;
+  -moz-transition: background 0.2s ease;
+}
+
+.title a:link,
+.title a:visited {
+  background: #c35;
+  float: left;
+  display: block;
+  color: #fff;
+  border: 0;
+  padding: 20px;
+  font: 26px/20px Montserrat, Arial, sans-serif;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+a:link,
+a:visited {
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.icon-nav {
+  padding-top: 15px;
+  float: right;
+  clear: none;
+}
+
+.icon-nav a {
+  border: none;
+  color: #999;
+  display: block;
+  float: left;
+  clear: none;
+  width: 28px;
+  margin-left: 30px;
+}
+
+.icon-nav a .menu-one {
+  margin-top: 2px;
+  width: 100%;
+  border-top: 5px solid #aaa;
+  padding: 3px 0 2px 0;
+  border-bottom: 5px solid #aaa;
+  margin-bottom: 5px;
+}
+
+.icon-nav a .menu-two {
+  width: 100%;
+  border-top: 5px solid #aaa;
+  padding: 2px 0;
+  margin-bottom: 4px;
+}
+
+a:link,
+a:visited {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Time section */
+#time_section {
+  margin-top: 0px;
+  position: relative;
+  width: 100%;
+}
+
+/* Message */
+.w90 {
+  margin-left: 5%;
+  width: 90%;
+}
+
+#msg,
+.syncHour {
+  float: left;
+}
+
+#location {
+  visibility: visible;
+}
+
+/* Time */
+time {
+  cursor: pointer;
+  direction: ltr;
+  z-index: -1;
+}
+
+span a, .nw, #clock {
+  white-space: nowrap;
+}
+
+.clock {
+  height: 281px;
+  position: relative;
+  width: 100%;
+}
+
+#clock_bg {
+  cursor: pointer;
+  direction: ltr;
+  height: 235px;
+  margin: 60px 0;
+  width: 100%;
+}
+
+#clock {
+  float: left;
+  font-size: 100px;
+  font-weight: bold;
+  line-height: normal;
+  position: relative;
+}
+
+time#clock {
+  cursor: pointer;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 19.3vw;
+  font-weight: 900;
+  line-height: 230px;
+  margin-left: 5%; 
+}
+
+@media (min-width: 800px) {
+  time#clock {
+    margin-left: 115px;  
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.digits {
+  width: 207px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.separator {
+  width: 124px;
 }
