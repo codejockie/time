@@ -9,11 +9,11 @@ const Message = () => {
         </h1>
       </div>
       <div id="syncDtl" className="w1">
-        The difference from Time.is was <span className="nw">+0.019 seconds</span>{" "}
+        The difference from Time was <span className="nw">+0.019 seconds</span>{" "}
         (±0.005 seconds).{" "}
       </div>
       <div id="location" className="w1">
-        Time in <a href="Aichi">Aichi, Japan</a> now:
+        Time in {`{{user's city, country}}`} now:
       </div>
     </div>
   )
