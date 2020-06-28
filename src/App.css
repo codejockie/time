@@ -151,7 +151,9 @@ time {
   z-index: -1;
 }
 
-span a, .nw, #clock {
+span a,
+.nw,
+#clock {
   white-space: nowrap;
 }
 
@@ -164,7 +166,7 @@ span a, .nw, #clock {
 #clock_bg {
   cursor: pointer;
   direction: ltr;
-  height: 235px;
+  height: 300px;
   margin: 60px 0;
   width: 100%;
 }
@@ -179,16 +181,16 @@ span a, .nw, #clock {
 
 time#clock {
   cursor: pointer;
-  font-family: 'Share Tech Mono', monospace;
+  font-family: "Share Tech Mono", monospace;
   font-size: 19.3vw;
   font-weight: 900;
-  line-height: 230px;
-  margin-left: 5%; 
+  line-height: 300px;
+  margin-left: 5%;
 }
 
 @media (min-width: 800px) {
   time#clock {
-    margin-left: 115px;  
+    margin-left: 115px;
   }
 }
 
@@ -198,4 +200,73 @@ time#clock {
 
 .separator {
   width: 124px;
+}
+
+/* Date */
+
+body.mts,
+.mts select,
+.mts input,
+.mts textarea,
+.mts h1,
+.mts h2,
+body.mts .clockdate,
+.mts .tbx div {
+  letter-spacing: 0;
+}
+
+body.mts,
+body.mts .clockdate,
+body.mts .clockplace {
+  font-family: Montserrat, "Arial Black", "Arial-BoldMT", "Arial Bold", Arial, Helvetica, sans-serif;
+}
+
+.mts .clockdate,
+.mts .clockplace {
+  font-weight: normal;
+}
+
+.mts h1,
+.mts h2,
+.mts h3,
+.mts .clockdate {
+  font-weight: 900;
+  font-style: normal;
+}
+
+.clockdate {
+  cursor: pointer;
+}
+
+#loc,
+#clock0,
+.clockdate,
+.clockplace,
+#day {
+  text-align: right;
+}
+
+.clockdate,
+.clockplace {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+#day,
+#loc,
+#pL1 a,
+#pL a:link,
+#pL a:visited,
+#day1 {
+  color: #333;
+}
+
+#loc,
+#clock0,
+.clockdate,
+.clockplace,
+#day {
+  text-align: right;
 }
